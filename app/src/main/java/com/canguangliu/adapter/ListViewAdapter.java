@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by canguang.liu on 2017-07-27.
@@ -14,12 +14,12 @@ import java.util.ArrayList;
 public class ListViewAdapter extends BaseAdapter{
 
     private Context context;
-    private ArrayList<String> list;
+    private List<String> list;
 
     public ListViewAdapter() {
     }
 
-    public ListViewAdapter(Context context, ArrayList<String> list) {
+    public ListViewAdapter(Context context, List<String> list) {
         this.context = context;
         this.list = list;
     }
