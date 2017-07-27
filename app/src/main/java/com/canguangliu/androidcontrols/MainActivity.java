@@ -1,5 +1,6 @@
 package com.canguangliu.androidcontrols;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.bt_list:
+                Intent intent = new Intent();
+                intent.setClass(this,ListViewActivity.class);
+                startActivity(intent);
                 return;
             default:
                 return;
